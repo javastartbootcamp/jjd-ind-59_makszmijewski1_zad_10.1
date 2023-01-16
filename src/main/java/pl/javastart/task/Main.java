@@ -10,13 +10,7 @@ public class Main {
         int yearProduction;
         System.out.println("Podaj informację o trzech unikalnych samochodach");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj markę");
-        brand = scanner.nextLine();
-        System.out.println("Podaj rok produkcji");
-        yearProduction = scanner.nextInt();
-        scanner.nextLine();
-        cars[0] = new Car(brand, yearProduction);
-        int counter = 1;
+        int counter = 0;
         while (counter < cars.length) {
             System.out.println("Podaj markę");
             brand = scanner.nextLine();
